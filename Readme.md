@@ -58,8 +58,9 @@ Some change info on un-implemented feature
 	- saving files on disk will make it easier to manage, or spread on distributed storage. this will also keep the database slimmer and greatly increase the speed of backup/recovery.
 - Document submission still upload as single file, albeit adding limit of 2GB file size.
 	- chunks upload in on todo list
-	- this can be implemented by creating 2 endpoints on the backend side. 
-		- endpoint to upload file with parameter filename, chunk order, chunk byte. this will store those chunks in temporary path in server
+	- this can be implemented by creating 2 endpoints on the backend side to handle file in server side, and script on frontend side to split segments of the file / document to be fed to backend endpoint.
+		- endpoint to upload file with parameter like filename, chunk order, chunk byte. this will store those chunks in temporary path in server
 		- endpoint to merge the chunk by giving filename parameter. front end will signal this endpoint after completing last chunk upload, so backend will merge the file and save final path to database.
+		
 - Notification receipt for upload
 	- API endpoint for document submission gave response for id and filename. Upload receipt should be able to be implemented in Frontend. unless by "notification system" meant to sent email / message to customer then it would need to add additional API for those notification. This case need more clarification from user story.
