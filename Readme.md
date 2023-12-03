@@ -38,7 +38,7 @@ Analysis breakdown of task that need to be completed from story
 	- download all document by customer id
 
 # Implementation
-Implementation checklist
+## Implementation checklist
 - [x] allow user registration
 - [x] implement password validation for user creation to ensure passwords meet the specified criteria
 - [x] implement authentication system to verify user's identity before allowing document submission
@@ -52,7 +52,7 @@ Implementation checklist
 - [x] download document by id
 - [x] download all document by customer id
 
-Some change info on un-implemented feature
+## Some change / info on un-implemented feature
 - Database store for documents
 	- Though database can be use as data storage (using FILESTREAM in the case of SQL server), it is not advised to do so. Instead, we save file name and path for uploaded files in database while the files it self are on disk / filesystem.
 	- saving files on disk will make it easier to manage, or spread on distributed storage. this will also keep the database slimmer and greatly increase the speed of backup/recovery.
