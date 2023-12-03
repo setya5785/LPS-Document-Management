@@ -39,18 +39,18 @@ Analysis breakdown of task that need to be completed from story
 
 # Implementation
 Implementation checklist
-[v] allow user registration
-[v] implement password validation for user creation to ensure passwords meet the specified criteria
-[v] implement authentication system to verify user's identity before allowing document submission
-[v] Customer type user can submit document
-[v] Implement document validation for file type (xlsx and pdf)
-[ ] Use a chunking method to handle large file uploads
-[x] Store the documents in a database
-[ ] Integrate a notification system to send a receipt to the customer upon successful document submission
-[v] Document listing
-[v] only able to download after verified as business unit user only
-[v] download document by id
-[v] download all document by customer id
+- [x] allow user registration
+- [x] implement password validation for user creation to ensure passwords meet the specified criteria
+- [x] implement authentication system to verify user's identity before allowing document submission
+- [x] Customer type user can submit document
+- [x] Implement document validation for file type (xlsx and pdf)
+- [ ] Use a chunking method to handle large file uploads
+- [ ] Store the documents in a database
+- [ ] Integrate a notification system to send a receipt to the customer upon successful document submission
+- [x] Document listing
+- [x] only able to download after verified as business unit user only
+- [x] download document by id
+- [x] download all document by customer id
 
 Some change info on un-implemented feature
 - Database store for documents
