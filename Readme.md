@@ -45,7 +45,7 @@ Implementation checklist
 - [x] Customer type user can submit document
 - [x] Implement document validation for file type (xlsx and pdf)
 - [ ] Use a chunking method to handle large file uploads
-- [ ] Store the documents in a database
+- [x] Store the documents in a database
 - [ ] Integrate a notification system to send a receipt to the customer upon successful document submission
 - [x] Document listing
 - [x] only able to download after verified as business unit user only
